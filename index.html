@@ -1,99 +1,157 @@
 <!DOCTYPE html>
 <html lang="mr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>नवयुग प्रतिष्ठान सणसर</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>नवयुग प्रतिष्ठान सणसर</title>
 
-  <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family:Arial,sans-serif;
-    }
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
 
-    body{
-      background:#f5f5f5;
-    }
+body{
+background:#f5f5f5;
+color:#333;
+}
 
-    header{
-      background:#ff6b00;
-      color:white;
-      text-align:center;
-      padding:20px;
-    }
+header{
+background:#ff6b00;
+color:#fff;
+padding:15px 20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+}
 
-    header h1{
-      font-size:28px;
-    }
+header h1{
+font-size:22px;
+}
 
-    header p{
-      margin-top:8px;
-      font-size:16px;
-    }
+nav a{
+color:#fff;
+text-decoration:none;
+margin-left:15px;
+font-weight:bold;
+}
 
-    nav{
-      background:#222;
-      text-align:center;
-      padding:12px;
-    }
+.hero{
+background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url('https://images.unsplash.com/photo-1513151233558-d860c5398176?w=1200');
+background-size:cover;
+background-position:center;
+height:420px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
 
-    nav a{
-      color:white;
-      text-decoration:none;
-      margin:10px;
-      font-weight:bold;
-    }
+.hero h2{
+font-size:38px;
+margin-bottom:15px;
+}
 
-    .hero{
-      padding:50px 20px;
-      text-align:center;
-    }
+.hero p{
+font-size:18px;
+max-width:700px;
+}
 
-    .hero h2{
-      color:#ff6b00;
-      margin-bottom:15px;
-    }
+.btn{
+margin-top:25px;
+background:#ff6b00;
+color:white;
+padding:12px 30px;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+display:inline-block;
+}
 
-    .hero p{
-      font-size:18px;
-    }
+section{
+padding:50px 20px;
+}
 
-    footer{
-      background:#222;
-      color:white;
-      text-align:center;
-      padding:15px;
-      margin-top:40px;
-    }
-  </style>
+.container{
+max-width:1100px;
+margin:auto;
+}
 
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+margin-top:20px;
+}
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+}
+</style>
 </head>
-<section style="background:#fff3e0;padding:40px 20px;text-align:center;">
-    <h2 style="color:#ff6600;font-size:32px;">नवयुग प्रतिष्ठान सणसर</h2>
-    <p style="font-size:20px;">सेवा • संस्कार • समाज</p>
-
-    <button style="background:#ff6600;color:white;padding:12px 25px;border:none;border-radius:8px;font-size:18px;">
-        आमच्याबद्दल जाणून घ्या
-    </button>
-</section>
 <body>
 
 <header>
-<h1>नवयुग प्रतिष्ठान सणसर</h1>
-<p>सेवा • संस्कार • समाज</p>
+    <h1>नवयुग प्रतिष्ठान सणसर</h1>
+
+    <nav>
+        <a href="#">मुख्यपृष्ठ</a>
+        <a href="#">आमच्याबद्दल</a>
+        <a href="#">कार्यक्रम</a>
+        <a href="#">संपर्क</a>
+    </nav>
 </header>
 
-<nav>
-<a href="#">मुख्यपृष्ठ</a>
-<a href="#">आमच्याबद्दल</a>
-<a href="#">कार्यक्रम</a>
-<a href="#">संपर्क</a>
-</nav>
+<section class="hero">
+    <h2>आपले हार्दिक स्वागत आहे</h2>
 
-<div class="hero">
-<h2>आपले स्वागत आहे</h2>
+    <p>
+        नवयुग प्रतिष्ठान सणसरच्या अधिकृत वेबसाइटवर
+        आपले हार्दिक स्वागत आहे.
+    </p>
+
+    <a href="#about" class="btn">
+        अधिक जाणून घ्या
+    </a>
+</section>
+
+<section id="about">
+<div class="container">
+
+<div class="card">
+<h2>🏛 आमच्याबद्दल</h2>
 
 <p>
-नवयुग प्रतिष्ठान सणसरच्या अधिकृत वेबसाइटवर आपले हार्दिक स्वागत आहे 
+नवयुग प्रतिष्ठान सणसर ही सामाजिक, धार्मिक व सांस्कृतिक
+कार्य करणारी संस्था आहे.
+समाजसेवा, शिक्षण, आरोग्य आणि विविध उपक्रम
+राबविणे हे संस्थेचे प्रमुख उद्दिष्ट आहे.
+</p>
+
+</div>
+
+<div class="card">
+<h2>📢 सूचना</h2>
+
+<p>
+लवकरच सर्व सूचना Firebase मधून Live दिसतील.
+</p>
+</div>
+
+<div class="card">
+<h2>📅 कार्यक्रम</h2>
+
+<p>
+संस्थेचे आगामी कार्यक्रम 
