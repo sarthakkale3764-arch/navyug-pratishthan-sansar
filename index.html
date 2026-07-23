@@ -4,22 +4,47 @@
 <head>
 
 <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-<title>नवयुग प्रतिष्ठान सणसर</title>
+<title>🏵️ नवयुग प्रतिष्ठान सणसर</title>
 
-<meta name="description" content="नवयुग प्रतिष्ठान सणसर - सार्वजनिक गणेशोत्सव मंडळ">
+<meta name="description"
+content="नवयुग प्रतिष्ठान सणसर सार्वजनिक गणेशोत्सव मंडळ अधिकृत संकेतस्थळ">
 
-<meta name="keywords" content="नवयुग प्रतिष्ठान, सणसर, गणेशोत्सव, सार्वजनिक गणपती">
+<meta name="keywords"
+content="नवयुग प्रतिष्ठान, सणसर, गणेशोत्सव, सार्वजनिक गणपती, Navyug Pratishthan Sansar">
 
-<meta name="author" content="Navyug Pratishthan Sansar">
+<meta name="author"
+content="Navyug Pratishthan Sansar">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<meta name="theme-color"
+content="#ff6b00">
 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta name="robots"
+content="index, follow">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon"
+type="image/png"
+href="images/logo.png">
+
+<link rel="apple-touch-icon"
+href="images/logo.png">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
 <style>
 
@@ -27,15 +52,40 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-scroll-behavior:smooth;
 font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+html{
+scroll-behavior:smooth;
+overflow-x:hidden;
 }
 
 body{
 
-background:#f5f5f5;
-color:#333;
+background:#f7f7f7;
+color:#222;
 overflow-x:hidden;
+
+}
+  :root{
+
+--primary:#ff6b00;
+--secondary:#ff9800;
+--dark:#1e1e1e;
+--light:#ffffff;
+--bg:#f7f7f7;
+--text:#333333;
+--shadow:0 10px 30px rgba(0,0,0,.12);
+--radius:18px;
+--transition:.4s ease;
+
+}
+
+body{
+
+background:var(--bg);
+color:var(--text);
 
 }
 
@@ -53,52 +103,131 @@ color:inherit;
 
 }
 
+ul{
+
+list-style:none;
+
+}
+
 .container{
 
-width:90%;
-max-width:1200px;
+width:92%;
+max-width:1300px;
 margin:auto;
 
 }
 
 section{
 
-padding:80px 0;
+padding:90px 0;
+
+}
+
+h1,h2,h3,h4{
+
+font-weight:700;
+color:var(--dark);
 
 }
 
 h2{
 
-font-size:34px;
+font-size:38px;
 text-align:center;
-color:#ff6b00;
-margin-bottom:20px;
+margin-bottom:25px;
+position:relative;
+
+}
+
+h2::after{
+
+content:"";
+width:90px;
+height:4px;
+background:var(--primary);
+display:block;
+margin:12px auto;
+border-radius:20px;
 
 }
 
 p{
 
-line-height:1.8;
+line-height:1.9;
+font-size:17px;
 
 }
 
 .btn{
 
 display:inline-block;
-padding:14px 34px;
-background:#ff6b00;
+padding:15px 35px;
+background:linear-gradient(135deg,#ff6b00,#ff9800);
 color:#fff;
-border-radius:8px;
+font-size:17px;
 font-weight:600;
-transition:.3s;
+border-radius:50px;
+transition:var(--transition);
+box-shadow:var(--shadow);
 
 }
 
 .btn:hover{
 
-background:#e65c00;
+transform:translateY(-5px);
+box-shadow:0 15px 35px rgba(255,107,0,.35);
 
 }
+
+.card{
+
+background:#fff;
+padding:35px;
+border-radius:var(--radius);
+box-shadow:var(--shadow);
+transition:.35s;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.orange{
+
+color:var(--primary);
+
+}
+
+.center{
+
+text-align:center;
+
+}
+
+.mt{
+
+margin-top:40px;
+
+}
+
+.mb{
+
+margin-bottom:40px;
+
+}
+
+.py{
+
+padding:80px 0;
+
+    }
+    
+/* ===========================
+   HEADER & NAVIGATION
+=========================== */
 
 header{
 
@@ -106,276 +235,140 @@ position:fixed;
 top:0;
 left:0;
 width:100%;
-background:#ff6b00;
+padding:16px 8%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:15px 30px;
-z-index:999;
-box-shadow:0 5px 15px rgba(0,0,0,.15);
+background:rgba(255,255,255,.95);
+backdrop-filter:blur(12px);
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+z-index:9999;
+transition:.4s;
+
+}
+
+header.scrolled{
+
+padding:12px 8%;
+background:#ffffff;
+box-shadow:0 10px 25px rgba(0,0,0,.12);
 
 }
 
 .logo{
 
+display:flex;
+align-items:center;
+gap:12px;
 font-size:24px;
 font-weight:700;
-color:#fff;
+color:var(--primary);
 
 }
-    nav{
+
+.logo img{
+
+width:60px;
+height:60px;
+border-radius:50%;
+object-fit:cover;
+border:3px solid var(--primary);
+box-shadow:0 5px 15px rgba(255,107,0,.35);
+
+}
+
+.logo span{
+
+display:flex;
+flex-direction:column;
+line-height:1.3;
+
+}
+
+.logo small{
+
+font-size:13px;
+font-weight:500;
+color:#666;
+
+}
+
+nav{
 
 display:flex;
 align-items:center;
-gap:25px;
+gap:28px;
 
 }
 
 nav a{
 
-color:#fff;
+position:relative;
 font-size:16px;
-font-weight:500;
+font-weight:600;
+color:#333;
 transition:.3s;
 
 }
 
 nav a:hover{
 
-color:#ffe082;
+color:var(--primary);
+
+}
+
+nav a::after{
+
+content:"";
+position:absolute;
+left:0;
+bottom:-8px;
+width:0%;
+height:3px;
+background:var(--primary);
+border-radius:20px;
+transition:.35s;
+
+}
+
+nav a:hover::after{
+
+width:100%;
 
 }
 
 .menu-btn{
 
 display:none;
-font-size:32px;
-color:#fff;
+font-size:30px;
 cursor:pointer;
+color:var(--primary);
+transition:.3s;
 
 }
+
+.menu-btn:hover{
+
+transform:rotate(90deg);
+
+}
+
+/* Hero Space */
 
 .hero{
 
-margin-top:70px;
-height:100vh;
-position:relative;
-overflow:hidden;
-
-}
-
-.slide{
-
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-opacity:0;
-transition:opacity 1s ease-in-out;
-
-}
-
-.slide.active{
-
-opacity:1;
-
-}
-
-.slide img{
-
-width:100%;
-height:100%;
-object-fit:cover;
-
-}
-
-.overlay{
-
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,.45);
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-
-}
-
-.overlay-content{
-
-max-width:800px;
-color:#fff;
-
-}
-
-.overlay-content h1{
-
-font-size:52px;
-margin-bottom:20px;
-
-}
-
-.overlay-content p{
-
-font-size:20px;
-line-height:1.8;
-margin-bottom:30px;
+margin-top:90px;
 
     }
-    .card{
+    /* ===========================
+   RESPONSIVE NAVIGATION
+=========================== */
 
-background:#fff;
-padding:30px;
-border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,.1);
-margin-bottom:30px;
-
-}
-
-.card h2{
-
-color:#ff6b00;
-margin-bottom:20px;
-text-align:center;
-
-}
-
-.card p{
-
-font-size:17px;
-line-height:1.9;
-text-align:justify;
-
-}
-
-.gallery{
-
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-
-}
-
-.gallery img{
-
-width:100%;
-height:220px;
-object-fit:cover;
-border-radius:12px;
-transition:.4s;
-
-}
-
-.gallery img:hover{
-
-transform:scale(1.05);
-
-}
-
-.committee{
-
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-
-}
-
-.member{
-
-background:#fff;
-padding:20px;
-border-radius:15px;
-text-align:center;
-box-shadow:0 5px 15px rgba(0,0,0,.1);
-
-}
-
-.member img{
-
-width:140px;
-height:140px;
-border-radius:50%;
-margin:auto;
-margin-bottom:15px;
-object-fit:cover;
-
-}
-
-.member h3{
-
-color:#ff6b00;
-margin-bottom:10px;
-
-}
-
-.member p{
-
-font-size:15px;
-
-}
-    .notice{
-
-background:#fff3cd;
-border-left:6px solid #ff9800;
-padding:20px;
-border-radius:10px;
-margin-bottom:30px;
-
-}
-
-.notice h3{
-
-color:#e65100;
-margin-bottom:10px;
-
-}
-
-.notice p{
-
-font-size:16px;
-
-}
-
-footer{
-
-background:#222;
-color:#fff;
-text-align:center;
-padding:35px 20px;
-
-}
-
-footer h3{
-
-margin-bottom:10px;
-
-}
-
-footer p{
-
-margin:8px 0;
-
-}
-
-iframe{
-
-width:100%;
-height:350px;
-border:none;
-border-radius:15px;
-
-}
-
-@media(max-width:768px){
+@media (max-width:992px){
 
 header{
 
-padding:15px 20px;
+padding:15px 5%;
 
 }
 
@@ -385,29 +378,41 @@ font-size:20px;
 
 }
 
-nav{
+.logo img{
 
-display:none;
-position:absolute;
-top:70px;
-left:0;
-width:100%;
-background:#ff6b00;
-flex-direction:column;
-padding:20px;
+width:52px;
+height:52px;
 
 }
 
-nav.show{
+nav{
 
+position:fixed;
+top:90px;
+left:-100%;
+width:100%;
+height:calc(100vh - 90px);
+background:#ffffff;
 display:flex;
+flex-direction:column;
+justify-content:flex-start;
+align-items:center;
+padding-top:40px;
+gap:25px;
+transition:.4s;
+box-shadow:0 15px 30px rgba(0,0,0,.12);
+
+}
+
+nav.active{
+
+left:0;
 
 }
 
 nav a{
 
-padding:12px 0;
-border-bottom:1px solid rgba(255,255,255,.2);
+font-size:18px;
 
 }
 
@@ -417,73 +422,97 @@ display:block;
 
 }
 
-.hero{
-
-height:80vh;
-
 }
 
-.overlay-content h1{
+/* ===========================
+   MOBILE
+=========================== */
 
-font-size:34px;
-
-}
-
-.overlay-content p{
-
-font-size:17px;
-
-}
-    .gallery{
-
-grid-template-columns:1fr;
-
-}
-
-.committee{
-
-grid-template-columns:1fr;
-
-}
-
-.card{
-
-padding:20px;
-
-}
+@media (max-width:768px){
 
 .container{
 
-width:94%;
+width:95%;
 
 }
 
-.overlay-content h1{
+section{
 
-font-size:28px;
+padding:70px 0;
 
 }
 
-.overlay-content p{
+h2{
+
+font-size:30px;
+
+}
+
+p{
 
 font-size:16px;
+line-height:1.8;
 
 }
 
 .btn{
 
-padding:12px 24px;
-font-size:16px;
+padding:13px 28px;
+font-size:15px;
+
+}
+
+.card{
+
+padding:22px;
 
 }
 
 }
 
-html{
+/* ===========================
+   SMALL MOBILE
+=========================== */
 
-scroll-behavior:smooth;
+@media (max-width:480px){
+
+.logo{
+
+font-size:18px;
 
 }
+
+.logo img{
+
+width:45px;
+height:45px;
+
+}
+
+h2{
+
+font-size:26px;
+
+}
+
+p{
+
+font-size:15px;
+
+}
+
+.btn{
+
+width:100%;
+text-align:center;
+
+}
+
+}
+
+/* ===========================
+   SCROLLBAR
+=========================== */
 
 ::-webkit-scrollbar{
 
@@ -499,8 +528,8 @@ background:#f1f1f1;
 
 ::-webkit-scrollbar-thumb{
 
-background:#ff6b00;
-border-radius:10px;
+background:linear-gradient(#ff9800,#ff6b00);
+border-radius:30px;
 
 }
 
@@ -508,80 +537,165 @@ border-radius:10px;
 
 background:#e65c00;
 
-}
-
-</style>
-
-</head>
+    }
     <body>
 
-<header>
+<header id="header">
 
 <div class="logo">
 
-🏵️ नवयुग प्रतिष्ठान सणसर
+<img src="images/logo.png" alt="Ganpati Logo">
+
+<span>
+
+नवयुग प्रतिष्ठान सणसर
+
+<small>ही शान कोणाची... नवयुगच्या राज्याची!</small>
+
+</span>
 
 </div>
 
-<div class="menu-btn" onclick="toggleMenu()">
+<div class="menu-btn" id="menuBtn">
 
-☰
+<i class="fas fa-bars"></i>
 
 </div>
 
-<nav id="menu">
+<nav id="navbar">
 
-<a href="#home">मुख्यपृष्ठ</a>
+<a href="#home">
+<i class="fas fa-house"></i>
+मुख्यपृष्ठ
+</a>
 
-<a href="#about">आमच्याबद्दल</a>
+<a href="#about">
+<i class="fas fa-circle-info"></i>
+आमच्याबद्दल
+</a>
 
-<a href="#committee">कार्यकारिणी</a>
+<a href="#committee">
+<i class="fas fa-users"></i>
+कार्यकारिणी
+</a>
 
-<a href="#gallery">फोटो गॅलरी</a>
+<a href="#gallery">
+<i class="fas fa-images"></i>
+फोटो गॅलरी
+</a>
 
-<a href="#events">कार्यक्रम</a>
+<a href="#events">
+<i class="fas fa-calendar-days"></i>
+कार्यक्रम
+</a>
 
-<a href="#contact">संपर्क</a>
+<a href="#donation">
+<i class="fas fa-hand-holding-heart"></i>
+देणगीदार
+</a>
+
+<a href="#income">
+<i class="fas fa-arrow-trend-up"></i>
+आवक
+</a>
+
+<a href="#expense">
+<i class="fas fa-arrow-trend-down"></i>
+खर्च
+</a>
+
+<a href="#report">
+<i class="fas fa-file-lines"></i>
+अहवाल
+</a>
+
+<a href="#contact">
+<i class="fas fa-location-dot"></i>
+स्थान
+</a>
 
 </nav>
 
 </header>
+    <!-- ==========================
+        HERO SLIDER START
+=========================== -->
 
 <section class="hero" id="home">
 
+<div class="slider">
+
 <div class="slide active">
 
-<img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=1600&q=80" alt="Slide 1">
+<img src="images/ganpati1.jpg" alt="श्री गणेश">
 
 </div>
 
 <div class="slide">
 
-<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80" alt="Slide 2">
+<img src="images/ganpati2.jpg" alt="श्री गणेश">
 
 </div>
 
 <div class="slide">
 
-<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80" alt="Slide 3">
+<img src="images/ganpati3.jpg" alt="श्री गणेश">
 
 </div>
 
-<div class="overlay">
+<div class="slide">
 
-<div class="overlay-content">
+<img src="images/ganpati4.jpg" alt="श्री गणेश">
 
-<h1>नवयुग प्रतिष्ठान सणसर</h1>
+</div>
+
+<div class="slide">
+
+<img src="images/ganpati5.jpg" alt="श्री गणेश">
+
+</div>
+
+<div class="hero-overlay">
+
+<div class="hero-content">
+
+<img
+src="images/logo.png"
+class="hero-logo"
+alt="Ganpati Logo">
+
+<h1>
+
+🏵️ नवयुग प्रतिष्ठान सणसर
+
+</h1>
+
+<h2>
+
+सार्वजनिक गणेशोत्सव मंडळ
+
+</h2>
 
 <p>
 
-सार्वजनिक गणेशोत्सव मंडळात आपले हार्दिक स्वागत आहे.
+✨
+ही शान कोणाची...
+नवयुगच्या राज्याची!
+✨
 
 </p>
 
+<div class="hero-buttons">
+
 <a href="#about" class="btn">
 
-अधिक जाणून घ्या
+आमच्याबद्दल
+
+</a>
+
+<a href="#gallery" class="btn">
+
+फोटो गॅलरी
 
 </a>
 
@@ -589,530 +703,243 @@ background:#e65c00;
 
 </div>
 
-</section>
-        <section id="about">
-
-<div class="container">
-
-<div class="card">
-
-<h2>🏵️ आमच्याबद्दल</h2>
-
-<p>
-
-नवयुग प्रतिष्ठान सणसर हे सणसर गावातील सार्वजनिक गणेशोत्सव मंडळ आहे.
-मंडळाचे मुख्य उद्दिष्ट धार्मिक, सांस्कृतिक आणि सामाजिक उपक्रमांद्वारे
-समाजात एकोपा, सेवा आणि संस्कार जोपासणे हे आहे.
-
-</p>
-
-<p>
-
-दरवर्षी श्री गणेशोत्सव मोठ्या उत्साहात साजरा केला जातो.
-मंडळामार्फत विविध धार्मिक कार्यक्रम, सामाजिक उपक्रम,
-रक्तदान शिबिर, स्वच्छता अभियान, सांस्कृतिक स्पर्धा आणि
-समाजोपयोगी कार्यांचे आयोजन केले जाते.
-
-</p>
-
-<p>
-
-गावातील सर्व नागरिकांना एकत्र आणून सामाजिक ऐक्य निर्माण करणे,
-तरुणांना चांगले संस्कार देणे आणि आपल्या परंपरा जपणे
-हे मंडळाचे प्रमुख ध्येय आहे.
-
-</p>
-
-</div>
-
-<div class="notice">
-
-<h3>📢 सूचना</h3>
-
-<p id="liveNotice">
-
-येथे लवकरच Firebase मधून Live सूचना दिसतील.
-
-</p>
-
-</div>
-
-</div>
-
-        </section>
-        <section id="events">
-
-<div class="container">
-
-<div class="card">
-
-<h2>📅 आगामी कार्यक्रम</h2>
-
-<p>
-
-मंडळामार्फत आयोजित करण्यात येणाऱ्या सर्व आगामी कार्यक्रमांची माहिती
-येथे उपलब्ध होईल.
-
-</p>
-
-<br>
-
-<ul style="line-height:2; padding-left:20px;">
-
-<li>🪔 श्री गणेश मूर्ती आगमन</li>
-
-<li>🙏 श्री गणेश स्थापना</li>
-
-<li>🎭 सांस्कृतिक कार्यक्रम</li>
-
-<li>🏆 विविध स्पर्धा</li>
-
-<li>🍛 महाप्रसाद</li>
-
-<li>🎶 भजन व कीर्तन</li>
-
-<li>🌺 विसर्जन मिरवणूक</li>
-
-</ul>
-
-</div>
-
-<div class="card">
-
-<h2>🎯 आमचे उद्दिष्ट</h2>
-
-<p>
-
-• धार्मिक परंपरा जपणे.</p>
-
-<p>
-
-• सामाजिक एकोपा वाढवणे.</p>
-
-<p>
-
-• युवकांना संस्कार व प्रेरणा देणे.</p>
-
-<p>
-
-• सांस्कृतिक कार्यक्रमांचे आयोजन.</p>
-
-<p>
-
-• समाजोपयोगी उपक्रम राबविणे.</p>
-
-</div>
-
-</div>
-
-        </section>
-        <section id="committee">
-
-<div class="container">
-
-<div class="card">
-
-<h2>👥 कार्यकारिणी</h2>
-
-<p style="text-align:center; margin-bottom:30px;">
-
-नवयुग प्रतिष्ठान सणसर सार्वजनिक गणेशोत्सव मंडळाची कार्यकारिणी.
-
-</p>
-
-<div class="committee">
-
-<div class="member">
-
-<img src="images/president.jpg" alt="अध्यक्ष">
-
-<h3>अध्यक्ष</h3>
-
-<p>नाव लवकरच उपलब्ध होईल</p>
-
-</div>
-
-<div class="member">
-
-<img src="images/vice-president.jpg" alt="उपाध्यक्ष">
-
-<h3>उपाध्यक्ष</h3>
-
-<p>नाव लवकरच उपलब्ध होईल</p>
-
-</div>
-
-<div class="member">
-
-<img src="images/secretary.jpg" alt="सचिव">
-
-<h3>सचिव</h3>
-
-<p>नाव लवकरच उपलब्ध होईल</p>
-
-</div>
-
-<div class="member">
-
-<img src="images/treasurer.jpg" alt="खजिनदार">
-
-<h3>खजिनदार</h3>
-
-<p>नाव लवकरच उपलब्ध होईल</p>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-        </section>
-        <div class="card">
-
-<h2>🤝 इतर कार्यकारिणी सदस्य</h2>
-
-<div class="committee">
-
-<div class="member">
-
-<img src="images/member1.jpg" alt="सदस्य">
-
-<h3>सदस्य</h3>
-
-<p>नाव लवकरच उपलब्ध होईल</p>
-
-</div>
-
-<div class="member">
-
-<img src="images/member2.jpg" alt="सदस्य">
-
-<h3>सदस्य</h3>
-
-<p>नाव लवकरच उपलब्ध होईल</p>
-
-</div>
-
-<div class="member">
-
-<img src="images/member3.jpg" alt="सदस्य">
-
-<h3>सदस्य</h3>
-
-<p>नाव लवकरच उपलब्ध होईल</p>
-
-</div>
-
-<div class="member">
-
-<img src="images/member4.jpg" alt="सदस्य">
-
-<h3>सदस्य</h3>
-
-<p>नाव लवकरच उपलब्ध होईल</p>
-
-</div>
-
-<div class="member">
-
-<img src="images/member5.jpg" alt="सदस्य">
-
-<h3>सदस्य</h3>
-
-<p>नाव लवकरच उपलब्ध होईल</p>
-
-</div>
-
-<div class="member">
-
-<img src="images/member6.jpg" alt="सदस्य">
-
-<h3>सदस्य</h3>
-
-<p>नाव लवकरच उपलब्ध होईल</p>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-    </section>
-        <section id="gallery">
-
-<div class="container">
-
-<div class="card">
-
-<h2>📸 फोटो गॅलरी</h2>
-
-<p style="text-align:center; margin-bottom:30px;">
-
-मंडळाच्या विविध कार्यक्रमांचे काही अविस्मरणीय क्षण.
-
-</p>
-
-<div class="gallery">
-
-<img src="images/gallery1.jpg" alt="Gallery Image 1">
-
-<img src="images/gallery2.jpg" alt="Gallery Image 2">
-
-<img src="images/gallery3.jpg" alt="Gallery Image 3">
-
-<img src="images/gallery4.jpg" alt="Gallery Image 4">
-
-<img src="images/gallery5.jpg" alt="Gallery Image 5">
-
-<img src="images/gallery6.jpg" alt="Gallery Image 6">
-
-</div>
-
-</div>
-
-<div class="card">
-
-<h2>🖼️ विशेष क्षण</h2>
-
-<p style="text-align:center;">
-
-येथे भविष्यात श्री गणेश स्थापना, आरती, सांस्कृतिक कार्यक्रम,
-महाप्रसाद, मिरवणूक आणि इतर उपक्रमांचे फोटो Firebase द्वारे
-आपोआप दिसतील.
-
-</p>
-
-</div>
-
-</div>
-
-        </section>
-        <div class="container">
-
-<div class="card">
-
-<h2>🔥 Live Photo Gallery</h2>
-
-<p style="text-align:center; margin-bottom:25px;">
-
-लवकरच Firebase द्वारे नवीन फोटो आपोआप येथे दिसतील.
-
-</p>
-
-<div id="firebaseGallery" class="gallery">
-
-<!-- Firebase मधून फोटो येथे दिसतील -->
-
-</div>
-
-<div style="text-align:center; margin-top:30px;">
-
-<button class="btn" id="loadMoreBtn">
-
-अधिक फोटो पहा
-
-</button>
-
-</div>
-
-</div>
-
-<div class="card">
-
-<h2>🎥 कार्यक्रमांचे व्हिडिओ</h2>
-
-<p style="text-align:center; margin-bottom:20px;">
-
-भविष्यात मंडळाचे व्हिडिओ येथे उपलब्ध होतील.
-
-</p>
-
-<div style="background:#f0f0f0;
-height:250px;
-display:flex;
-align-items:center;
-justify-content:center;
-border-radius:12px;">
-
-<p style="font-size:18px; color:#666;">
-
-📹 Video Gallery Coming Soon...
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-    </section>
-        <section id="events">
-
-<div class="container">
-
-<div class="card">
-
-<h2>📅 आगामी कार्यक्रम</h2>
-
-<p style="text-align:center; margin-bottom:25px;">
-
-नवयुग प्रतिष्ठान सणसर सार्वजनिक गणेशोत्सव मंडळाचे आगामी कार्यक्रम येथे पाहता येतील.
-
-</p>
-
-<div id="eventList">
-
-<div style="padding:15px; border-bottom:1px solid #ddd;">
-
-<h3>🪔 श्री गणेश स्थापना</h3>
-
-<p>तारीख लवकरच जाहीर करण्यात येईल.</p>
-
-</div>
-
-<div style="padding:15px; border-bottom:1px solid #ddd;">
-
-<h3>🎭 सांस्कृतिक कार्यक्रम</h3>
-
-<p>वेळ व स्थळ लवकरच जाहीर करण्यात येईल.</p>
-
-</div>
-
-<div style="padding:15px;">
-
-<h3>🌺 विसर्जन मिरवणूक</h3>
-
-<p>संपूर्ण माहिती लवकरच उपलब्ध होईल.</p>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="card">
-
-<h2>🗓️ Google Calendar</h2>
-
-<p style="text-align:center; margin-bottom:20px;">
-
-मंडळाचे सर्व कार्यक्रम भविष्यात Google Calendar सोबत जोडले जातील.
-
-</p>
-
-<div style="background:#f5f5f5;
-height:350px;
-display:flex;
-justify-content:center;
-align-items:center;
-border-radius:12px;">
-
-<p style="font-size:18px; color:#666;">
-
-📅 Google Calendar Coming Soon...
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-        </section>
-        <section id="contact">
-
-<div class="container">
-
-<div class="card">
-
-<h2>📍 आमचे स्थान</h2>
-
-<p style="text-align:center; margin-bottom:20px;">
-
-नवयुग प्रतिष्ठान सणसर सार्वजनिक गणेशोत्सव मंडळाचे स्थान.
-
-</p>
-
-<div class="map">
-
-<iframe
-src="https://www.google.com/maps?q=Sansar,Maharashtra&output=embed"
-loading="lazy"
-allowfullscreen>
-</iframe>
-
-</div>
-
-</div>
-
-<div class="card">
-
-<h2>📢 Live सूचना फलक</h2>
-
-<p style="text-align:center; margin-bottom:20px;">
-
-Firebase मधून येणाऱ्या सर्व नवीन सूचना येथे दिसतील.
-
-</p>
-
-<div id="noticeBoard">
-
-<div class="notice">
-
-<h3>🔔 सूचना</h3>
-
-<p>
-
-सध्या कोणतीही नवीन सूचना उपलब्ध नाही.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="card">
-
-<h2>📞 संपर्क</h2>
-
-<p style="text-align:center;">
-
-संपर्काची माहिती लवकरच येथे उपलब्ध होईल.
-
-</p>
-
 </div>
 
 </div>
 
 </section>
 
-<footer>
+<!-- ==========================
+        HERO SLIDER END
+=========================== -->
+    /* =========================================
+        HERO SECTION CSS
+========================================= */
 
-<h3>🏵️ नवयुग प्रतिष्ठान सणसर</h3>
+.hero{
 
-<p>सार्वजनिक गणेशोत्सव मंडळ</p>
-
-<p>सेवा • संस्कार • समाज</p>
-
-<p>© 2026 सर्व हक्क राखीव.</p>
-    <script>
-
-const menu = document.getElementById("menu");
-
-function toggleMenu(){
-
-menu.classList.toggle("show");
+position:relative;
+width:100%;
+height:100vh;
+overflow:hidden;
 
 }
+
+.slider{
+
+position:relative;
+width:100%;
+height:100%;
+
+}
+
+.slide{
+
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+opacity:0;
+visibility:hidden;
+transition:opacity 1.5s ease-in-out;
+
+}
+
+.slide.active{
+
+opacity:1;
+visibility:visible;
+
+}
+
+.slide img{
+
+width:100%;
+height:100%;
+object-fit:cover;
+
+}
+
+.hero-overlay{
+
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:linear-gradient(
+rgba(0,0,0,.55),
+rgba(0,0,0,.55)
+);
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+
+}
+
+.hero-content{
+
+max-width:900px;
+color:#fff;
+animation:heroFade 1.4s ease;
+
+}
+
+.hero-logo{
+
+width:150px;
+height:150px;
+border-radius:50%;
+border:5px solid #fff;
+margin:auto;
+margin-bottom:25px;
+box-shadow:0 10px 35px rgba(0,0,0,.35);
+
+}
+
+.hero-content h1{
+
+font-size:55px;
+color:#fff;
+margin-bottom:10px;
+font-weight:700;
+
+}
+
+.hero-content h2{
+
+font-size:28px;
+color:#FFD54F;
+margin-bottom:20px;
+
+}
+
+.hero-content p{
+
+font-size:22px;
+line-height:1.9;
+margin-bottom:35px;
+font-weight:500;
+
+}
+
+.hero-buttons{
+
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+
+}
+
+.hero-buttons .btn{
+
+min-width:190px;
+text-align:center;
+
+}
+
+@keyframes heroFade{
+
+0%{
+
+opacity:0;
+transform:translateY(40px);
+
+}
+
+100%{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+/* ---------- Responsive ---------- */
+
+@media(max-width:768px){
+
+.hero{
+
+height:90vh;
+
+}
+
+.hero-logo{
+
+width:110px;
+height:110px;
+
+}
+
+.hero-content h1{
+
+font-size:34px;
+
+}
+
+.hero-content h2{
+
+font-size:20px;
+
+}
+
+.hero-content p{
+
+font-size:17px;
+
+}
+
+.hero-buttons{
+
+flex-direction:column;
+align-items:center;
+
+}
+
+.hero-buttons .btn{
+
+width:90%;
+
+}
+
+    }
+    <!-- =========================================
+        SECTION 1H - JAVASCRIPT
+========================================= -->
+
+<script>
+
+const menuBtn = document.getElementById("menuBtn");
+const navbar = document.getElementById("navbar");
+
+menuBtn.addEventListener("click",()=>{
+
+navbar.classList.toggle("active");
+
+});
+
+const header = document.getElementById("header");
+
+window.addEventListener("scroll",()=>{
+
+if(window.scrollY>60){
+
+header.classList.add("scrolled");
+
+}else{
+
+header.classList.remove("scrolled");
+
+}
+
+});
 
 const slides = document.querySelectorAll(".slide");
 
@@ -1130,119 +957,3033 @@ slides[index].classList.add("active");
 
 }
 
-setInterval(()=>{
+function nextSlide(){
 
 currentSlide++;
 
-if(currentSlide >= slides.length){
+if(currentSlide>=slides.length){
 
-currentSlide = 0;
+currentSlide=0;
 
 }
 
 showSlide(currentSlide);
 
-},4000);
+}
 
-const loadMoreBtn = document.getElementById("loadMoreBtn");
+setInterval(nextSlide,5000);
+
+const navLinks=document.querySelectorAll("#navbar a");
+
+navLinks.forEach((link)=>{
+
+link.addEventListener("click",()=>{
+
+navbar.classList.remove("active");
+
+});
+
+});
+
+window.addEventListener("load",()=>{
+
+showSlide(0);
+
+});
+
+</script>
+    <!-- =========================================
+            SECTION 2A
+           ABOUT US START
+========================================= -->
+
+<section id="about">
+
+<div class="container">
+
+<div class="card">
+
+<div class="center">
+
+<img src="images/logo.png"
+alt="Ganpati Logo"
+style="width:130px;
+height:130px;
+border-radius:50%;
+margin:auto;
+margin-bottom:25px;
+border:5px solid #ff6b00;
+box-shadow:0 10px 25px rgba(255,107,0,.30);">
+
+<h2>
+
+🏵️ नवयुग प्रतिष्ठान सणसर
+
+</h2>
+
+<h3
+style="color:#ff6b00;
+margin-bottom:20px;">
+
+"ही शान कोणाची...
+नवयुगच्या राज्याची!"
+
+</h3>
+
+</div>
+
+<p>
+
+नवयुग प्रतिष्ठान सणसर हे
+सार्वजनिक गणेशोत्सव मंडळ असून
+धार्मिक, सामाजिक आणि सांस्कृतिक
+परंपरा जपत समाजहितासाठी
+सातत्याने कार्यरत आहे.
+
+</p>
+
+<br>
+
+<p>
+
+श्री गणेशोत्सवाच्या माध्यमातून
+गावातील सर्व नागरिकांना एकत्र
+आणणे, युवकांमध्ये सामाजिक
+जाणीव निर्माण करणे आणि
+भारतीय संस्कृतीचे जतन करणे
+हे मंडळाचे प्रमुख ध्येय आहे.
+
+</p>
+
+<br>
+
+<p>
+
+मंडळामार्फत दरवर्षी
+श्री गणेशोत्सव मोठ्या
+उत्साहात साजरा केला जातो.
+भक्ती, सेवा आणि सामाजिक
+एकात्मता यांचा सुंदर संगम
+यामध्ये अनुभवायला मिळतो.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================================
+          SECTION 2A END
+========================================= -->
+    <!-- =========================================
+            SECTION 2B
+          मंडळाचा इतिहास
+========================================= -->
+
+<section id="history">
+
+<div class="container">
+
+<div class="card">
+
+<h2>📜 मंडळाचा इतिहास</h2>
+
+<p>
+
+नवयुग प्रतिष्ठान सणसर सार्वजनिक गणेशोत्सव मंडळ हे
+सणसर गावातील धार्मिक, सामाजिक आणि सांस्कृतिक
+एकात्मतेचे प्रतीक आहे. श्री गणेशाच्या आशीर्वादाने
+मंडळाची स्थापना समाजामध्ये एकोपा, सेवा आणि
+संस्कार रुजविण्याच्या उद्देशाने करण्यात आली.
+
+</p>
+
+<br>
+
+<p>
+
+गणेशोत्सव हा केवळ धार्मिक उत्सव नसून,
+तो समाजाला एकत्र आणणारा आणि युवकांना
+सामाजिक कार्यासाठी प्रेरणा देणारा उत्सव आहे.
+मंडळाने नेहमीच भक्तीबरोबर समाजहिताला
+प्राधान्य दिले आहे.
+
+</p>
+
+<br>
+
+<p>
+
+प्रत्येक वर्षी श्री गणेशोत्सव मोठ्या उत्साहात,
+शिस्तबद्ध नियोजनाने आणि भक्तिमय वातावरणात
+साजरा केला जातो. मंडळाच्या सर्व कार्यकर्त्यांच्या
+सहकार्यामुळे हा उत्सव अधिक भव्य आणि
+दिव्य स्वरूपात पार पडतो.
+
+</p>
+
+<br>
+
+<div class="card center">
+
+<h3 style="color:#ff6b00;">
+
+🏵️ आमचे ब्रीदवाक्य
+
+</h3>
+
+<h2 style="margin-top:20px;
+color:#e65100;">
+
+"ही शान कोणाची...
+नवयुगच्या राज्याची!"
+
+</h2>
+
+<p style="margin-top:20px;">
+
+हे ब्रीदवाक्य आमच्या मंडळाची ओळख,
+आमचा अभिमान आणि समाजसेवेची प्रेरणा आहे.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================================
+          SECTION 2B END
+========================================= -->
+    <!-- =========================================
+            SECTION 2C
+        आमची उद्दिष्टे
+========================================= -->
+
+<section id="objectives">
+
+<div class="container">
+
+<h2>🎯 आमची उद्दिष्टे</h2>
+
+<div class="objective-grid">
+
+<div class="card">
+
+<div class="center">
+
+<i class="fas fa-om"
+style="font-size:55px;color:#ff6b00;"></i>
+
+<h3 style="margin-top:20px;">
+धार्मिक कार्य
+</h3>
+
+<p>
+
+श्री गणेशोत्सव भक्तिमय वातावरणात
+आणि परंपरेनुसार साजरा करणे.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="center">
+
+<i class="fas fa-users"
+style="font-size:55px;color:#ff6b00;"></i>
+
+<h3 style="margin-top:20px;">
+सामाजिक एकोपा
+</h3>
+
+<p>
+
+गावातील सर्व नागरिकांना
+एकत्र आणून सामाजिक ऐक्य
+वाढविणे.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="center">
+
+<i class="fas fa-seedling"
+style="font-size:55px;color:#ff6b00;"></i>
+
+<h3 style="margin-top:20px;">
+संस्कार
+</h3>
+
+<p>
+
+युवकांमध्ये संस्कार,
+शिस्त आणि समाजसेवेची
+भावना निर्माण करणे.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="center">
+
+<i class="fas fa-hands-helping"
+style="font-size:55px;color:#ff6b00;"></i>
+
+<h3 style="margin-top:20px;">
+समाजसेवा
+</h3>
+
+<p>
+
+धार्मिक, सांस्कृतिक
+आणि समाजोपयोगी
+उपक्रम राबविणे.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================================
+            SECTION 2C END
+========================================= -->
+    <!-- =========================================
+            SECTION 2D
+     सामाजिक उपक्रम व विशेष माहिती
+========================================= -->
+
+<section id="activities">
+
+<div class="container">
+
+<h2>🌼 आमचे सामाजिक व धार्मिक उपक्रम</h2>
+
+<div class="objective-grid">
+
+<div class="card">
+
+<div class="center">
+
+<i class="fas fa-place-of-worship"
+style="font-size:55px;color:#ff6b00;"></i>
+
+<h3 style="margin-top:20px;">
+श्री गणेशोत्सव
+</h3>
+
+<p>
+
+दरवर्षी श्री गणेशोत्सव
+भक्तिमय वातावरणात,
+शिस्तबद्ध नियोजनाने
+आणि मोठ्या उत्साहात
+साजरा केला जातो.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="center">
+
+<i class="fas fa-heart"
+style="font-size:55px;color:#ff6b00;"></i>
+
+<h3 style="margin-top:20px;">
+समाजसेवा
+</h3>
+
+<p>
+
+धार्मिक कार्यक्रमांसोबत
+सामाजिक एकोपा,
+सेवाभाव आणि
+सामाजिक जाणीव
+जोपासली जाते.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="center">
+
+<i class="fas fa-hands-praying"
+style="font-size:55px;color:#ff6b00;"></i>
+
+<h3 style="margin-top:20px;">
+भक्ती व संस्कार
+</h3>
+
+<p>
+
+लहानांपासून मोठ्यांपर्यंत
+सर्वांना भक्ती,
+संस्कार आणि
+भारतीय संस्कृतीची
+ओळख करून दिली जाते.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<br><br>
+
+<div class="card">
+
+<h2>📅 निश्चित कार्यक्रम</h2>
+
+<div style="padding:25px;
+background:#fff8f2;
+border-left:6px solid #ff6b00;
+border-radius:12px;">
+
+<h3 style="color:#ff6b00;">
+
+🪔 १४ सप्टेंबर २०२६
+
+</h3>
+
+<p style="margin-top:15px;">
+
+<strong>
+श्री गणेश मूर्ती प्राणप्रतिष्ठा
+</strong>
+
+</p>
+
+<p>
+
+या दिवशी श्री गणेश मूर्तीची
+विधिवत प्राणप्रतिष्ठा
+मोठ्या भक्तिभावाने
+संपन्न होईल.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================================
+            SECTION 2D END
+========================================= -->
+    <!-- =========================================
+            SECTION 2E
+       FIREBASE LIVE NOTICE BOARD
+========================================= -->
+
+<section id="notice">
+
+<div class="container">
+
+<h2>📢 सूचना फलक</h2>
+
+<p class="center">
+
+नवयुग प्रतिष्ठान सणसर सार्वजनिक गणेशोत्सव मंडळाच्या
+सर्व नवीन सूचना येथे Live दिसतील.
+
+</p>
+
+<br>
+
+<div class="card">
+
+<div id="noticeBoard">
+
+<div class="notice-card">
+
+<div class="notice-icon">
+
+<i class="fas fa-bullhorn"></i>
+
+</div>
+
+<div class="notice-content">
+
+<h3>🔔 नवीन सूचना</h3>
+
+<p>
+
+सध्या कोणतीही नवीन सूचना उपलब्ध नाही.
+
+</p>
+
+<small>
+
+Firebase मधून नवीन सूचना
+आल्यावर त्या येथे
+आपोआप दिसतील.
+
+</small>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<br>
+
+<div class="card">
+
+<h3 class="center">
+
+📌 महत्त्वाची सूचना
+
+</h3>
+
+<p class="center">
+
+मंडळाच्या सर्व सूचना,
+कार्यक्रमातील बदल,
+देणगीदारांची माहिती
+आणि इतर महत्त्वाच्या
+घोषणा याच ठिकाणी
+Live Update होतील.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================================
+            SECTION 2E END
+========================================= -->
+    <!-- =========================================
+            SECTION 2F
+        ABOUT SECTION END
+========================================= -->
+
+<section id="about-end">
+
+<div class="container">
+
+<div class="card center">
+
+<div class="about-end-box">
+
+<i class="fas fa-om"
+style="
+font-size:70px;
+color:#ff6b00;
+margin-bottom:20px;
+"></i>
+
+<h2>
+
+🙏 श्री गणरायाच्या चरणी...
+
+</h2>
+
+<p
+style="
+font-size:18px;
+line-height:2;
+margin-top:20px;
+">
+
+|| गणपती बाप्पा मोरया ||
+
+<br><br>
+
+नवयुग प्रतिष्ठान सणसर
+सार्वजनिक गणेशोत्सव मंडळ
+धार्मिक, सामाजिक व सांस्कृतिक
+परंपरा जपत समाजसेवेचे कार्य
+अखंडपणे करत राहील.
+
+</p>
+
+<br>
+
+<h3
+style="
+color:#ff6b00;
+font-size:30px;
+">
+
+✨
+ही शान कोणाची...
+नवयुगच्या राज्याची!
+✨
+
+</h3>
+
+<br>
+
+<p>
+
+आपल्या सर्वांच्या सहकार्यामुळे
+मंडळ अधिक भव्य, दिव्य
+आणि समाजोपयोगी कार्य
+करत राहील.
+
+</p>
+
+<br>
+
+<a href="#committee" class="btn">
+
+👥 कार्यकारिणी पहा
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================================
+      ABOUT SECTION COMPLETE
+========================================= -->
+    <!-- =========================================
+            SECTION 3A
+      कार्यकारिणी START
+========================================= -->
+
+<section id="committee">
+
+<div class="container">
+
+<h2>👥 कार्यकारिणी</h2>
+
+<p class="center">
+
+नवयुग प्रतिष्ठान सणसर
+सार्वजनिक गणेशोत्सव मंडळ
+
+<br>
+
+२०२६ ची अधिकृत कार्यकारिणी
+
+</p>
+
+<br><br>
+
+<div class="committee-grid">
+
+<!-- अध्यक्ष -->
+
+<div class="member-card">
+
+<img src="images/president.jpg"
+alt="अध्यक्ष">
+
+<h3>
+
+👑 अध्यक्ष
+
+</h3>
+
+<h4>
+
+आविष्कार शिंदे
+
+</h4>
+
+<p>
+
+मंडळाचे अध्यक्ष
+
+</p>
+
+</div>
+
+<!-- खजिनदार -->
+
+<div class="member-card">
+
+<img src="images/treasurer.jpg"
+alt="खजिनदार">
+
+<h3>
+
+💰 खजिनदार
+
+</h3>
+
+<h4>
+
+श्रावण निंबाळकर
+
+</h4>
+
+<p>
+
+मंडळाचे खजिनदार
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================================
+            SECTION 3A END
+========================================= -->
+    <!-- =========================================
+            SECTION 3B
+          सदस्य PART - 1
+========================================= -->
+
+<div class="container">
+
+<div class="committee-grid">
+
+<!-- सदस्य 1 -->
+
+<div class="member-card">
+
+<img src="images/logo.png" alt="Ganpati Logo">
+
+<h3>👤 सदस्य</h3>
+
+<h4>अथर्व गोरे</h4>
+
+</div>
+
+<!-- सदस्य 2 -->
+
+<div class="member-card">
+
+<img src="images/logo.png" alt="Ganpati Logo">
+
+<h3>👤 सदस्य</h3>
+
+<h4>वेदांत गोरे</h4>
+
+</div>
+
+<!-- सदस्य 3 -->
+
+<div class="member-card">
+
+<img src="images/logo.png" alt="Ganpati Logo">
+
+<h3>👤 सदस्य</h3>
+
+<h4>आशिष साळुंखे</h4>
+
+</div>
+
+<!-- सदस्य 4 -->
+
+<div class="member-card">
+
+<img src="images/logo.png" alt="Ganpati Logo">
+
+<h3>👤 सदस्य</h3>
+
+<h4>देवराज निंबाळकर</h4>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- =========================================
+            SECTION 3B END
+========================================= -->
+    <!-- =========================================
+            SECTION 3C
+          सदस्य PART - 2
+========================================= -->
+
+<div class="container">
+
+<div class="committee-grid">
+
+<!-- सदस्य 5 -->
+
+<div class="member-card">
+
+<img src="images/logo.png" alt="Ganpati Logo">
+
+<h3>👤 सदस्य</h3>
+
+<h4>सिद्धिराज गोरे</h4>
+
+</div>
+
+<!-- सदस्य 6 -->
+
+<div class="member-card">
+
+<img src="images/logo.png" alt="Ganpati Logo">
+
+<h3>👤 सदस्य</h3>
+
+<h4>ऋषिकेश जडे</h4>
+
+</div>
+
+<!-- सदस्य 7 -->
+
+<div class="member-card">
+
+<img src="images/logo.png" alt="Ganpati Logo">
+
+<h3>👤 सदस्य</h3>
+
+<h4>प्रतीक महामुनी</h4>
+
+</div>
+
+<!-- सदस्य 8 -->
+
+<div class="member-card">
+
+<img src="images/logo.png" alt="Ganpati Logo">
+
+<h3>👤 सदस्य</h3>
+
+<h4>संस्कार शिंदे</h4>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- =========================================
+            SECTION 3C END
+========================================= -->
+    <!-- =========================================
+            SECTION 3D
+     MEMBER PART - 3 & SECTION END
+========================================= -->
+
+<div class="container">
+
+<div class="committee-grid">
+
+<!-- सदस्य 9 -->
+
+<div class="member-card">
+
+<img src="images/logo.png" alt="Ganpati Logo">
+
+<h3>👤 सदस्य</h3>
+
+<h4>कार्तिक काळे</h4>
+
+<p>
+नवयुग प्रतिष्ठान सणसर
+</p>
+
+</div>
+
+<!-- सदस्य 10 -->
+
+<div class="member-card">
+
+<img src="images/logo.png" alt="Ganpati Logo">
+
+<h3>👤 सदस्य</h3>
+
+<h4>सार्थक काळे</h4>
+
+<p>
+नवयुग प्रतिष्ठान सणसर
+</p>
+
+</div>
+
+</div>
+
+<br><br>
+
+<div class="card center">
+
+<h2>
+🙏 आमची कार्यकारिणी
+</h2>
+
+<p>
+
+नवयुग प्रतिष्ठान सणसरची कार्यकारिणी
+ही श्री गणरायाच्या सेवेसाठी,
+समाजहितासाठी आणि गणेशोत्सव
+भव्य-दिव्य करण्यासाठी सदैव
+कार्यरत आहे.
+
+</p>
+
+<br>
+
+<h3 style="color:#ff6b00;">
+
+✨
+ही शान कोणाची...
+नवयुगच्या राज्याची!
+✨
+
+</h3>
+
+<br>
+
+<a href="#gallery" class="btn">
+
+📸 फोटो गॅलरी पहा
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================================
+      SECTION 3 COMPLETE
+========================================= -->
+    <!-- =========================================
+            SECTION 4A
+        PHOTO GALLERY START
+========================================= -->
+
+<section id="gallery">
+
+<div class="container">
+
+<h2>📸 फोटो गॅलरी</h2>
+
+<p class="center">
+
+नवयुग प्रतिष्ठान सणसर सार्वजनिक गणेशोत्सव मंडळाच्या
+श्री गणेशोत्सवातील काही सुंदर क्षण.
+
+</p>
+
+<br><br>
+
+<div class="gallery-grid">
+
+<!-- Photo 1 -->
+
+<div class="gallery-card">
+
+<img src="images/ganpati1.jpg"
+alt="श्री गणेश">
+
+<div class="gallery-content">
+
+<h3>🏵️ श्री गणेश</h3>
+
+<p>
+
+नवयुग प्रतिष्ठान सणसर
+
+</p>
+
+</div>
+
+</div>
+
+<!-- Photo 2 -->
+
+<div class="gallery-card">
+
+<img src="images/ganpati2.jpg"
+alt="श्री गणेश">
+
+<div class="gallery-content">
+
+<h3>🙏 मंगलमूर्ती</h3>
+
+<p>
+
+श्री गणरायाचे दिव्य रूप
+
+</p>
+
+</div>
+
+</div>
+
+<!-- Photo 3 -->
+
+<div class="gallery-card">
+
+<img src="images/ganpati3.jpg"
+alt="श्री गणेश">
+
+<div class="gallery-content">
+
+<h3>🌺 बाप्पा</h3>
+
+<p>
+
+ही शान कोणाची...
+नवयुगच्या राज्याची!
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================================
+            SECTION 4A END
+========================================= -->
+    <!-- =========================================
+            SECTION 4B
+        PHOTO GALLERY PART - 2
+========================================= -->
+
+<div class="container">
+
+<div class="gallery-grid">
+
+<!-- Photo 4 -->
+
+<div class="gallery-card">
+
+<img src="images/ganpati4.jpg" alt="श्री गणेश">
+
+<div class="gallery-content">
+
+<h3>🌸 श्री गणराय</h3>
+
+<p>
+
+नवयुग प्रतिष्ठान सणसर
+
+</p>
+
+</div>
+
+</div>
+
+<!-- Photo 5 -->
+
+<div class="gallery-card">
+
+<img src="images/ganpati5.jpg" alt="श्री गणेश">
+
+<div class="gallery-content">
+
+<h3>🪔 मंगलमूर्ती मोरया</h3>
+
+<p>
+
+ही शान कोणाची...
+नवयुगच्या राज्याची!
+
+</p>
+
+</div>
+
+</div>
+
+<!-- Logo Card -->
+
+<div class="gallery-card">
+
+<img src="images/logo.png" alt="Ganpati Logo">
+
+<div class="gallery-content">
+
+<h3>🏵️ नवयुग प्रतिष्ठान</h3>
+
+<p>
+
+सार्वजनिक गणेशोत्सव मंडळ
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<br><br>
+
+<div class="card center">
+
+<h2>
+
+✨ फोटो गॅलरी ✨
+
+</h2>
+
+<p>
+
+श्री गणरायाचे विविध रूप, सजावट,
+आरास आणि भक्तिमय वातावरणाचे
+क्षण येथे जतन करण्यात आले आहेत.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- =========================================
+            SECTION 4B END
+========================================= -->
+    <!-- =========================================
+            SECTION 4C
+      PREMIUM GALLERY & FIREBASE
+========================================= -->
+
+<div class="container">
+
+<div class="card">
+
+<h2>
+
+📷 Live फोटो गॅलरी
+
+</h2>
+
+<p class="center">
+
+नवीन फोटो Firebase मधून
+येथे आपोआप दिसतील.
+
+</p>
+
+<br>
+
+<div id="firebaseGallery"
+class="gallery-grid">
+
+<!-- Firebase Photos Here -->
+
+</div>
+
+</div>
+
+<br>
+
+<div class="card center">
+
+<h2>
+
+🖼️ फोटो मोठा पाहा
+
+</h2>
+
+<p>
+
+कोणत्याही फोटोवर क्लिक केल्यावर
+तो Full Screen मध्ये दिसेल.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- Lightbox -->
+
+<div id="lightbox"
+class="lightbox">
+
+<span id="closeLightbox">
+
+&times;
+
+</span>
+
+<img
+id="lightboxImage"
+src=""
+alt="Gallery Image">
+
+</div>
+
+<!-- =========================================
+            SECTION 4C END
+========================================= -->
+    /* =========================================
+            SECTION 4D
+       GALLERY PREMIUM CSS
+========================================= */
+
+.gallery-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+
+}
+
+.gallery-card{
+
+position:relative;
+overflow:hidden;
+border-radius:20px;
+background:#fff;
+box-shadow:0 12px 30px rgba(0,0,0,.15);
+transition:.4s;
+
+}
+
+.gallery-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.gallery-card img{
+
+width:100%;
+height:320px;
+object-fit:cover;
+transition:.5s;
+
+}
+
+.gallery-card:hover img{
+
+transform:scale(1.12);
+
+}
+
+.gallery-content{
+
+position:absolute;
+left:0;
+bottom:0;
+width:100%;
+padding:18px;
+background:linear-gradient(
+transparent,
+rgba(0,0,0,.88)
+);
+
+color:#fff;
+
+}
+
+.gallery-content h3{
+
+color:#fff;
+margin-bottom:8px;
+
+}
+
+.gallery-content p{
+
+font-size:15px;
+line-height:1.6;
+
+}
+
+/* ---------- Lightbox ---------- */
+
+.lightbox{
+
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.95);
+justify-content:center;
+align-items:center;
+z-index:99999;
+
+}
+
+.lightbox img{
+
+max-width:92%;
+max-height:92%;
+border-radius:15px;
+box-shadow:0 15px 40px rgba(255,255,255,.15);
+
+}
+
+#closeLightbox{
+
+position:absolute;
+top:25px;
+right:40px;
+font-size:55px;
+color:#fff;
+cursor:pointer;
+transition:.3s;
+
+}
+
+#closeLightbox:hover{
+
+color:#ff9800;
+transform:rotate(180deg);
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media(max-width:768px){
+
+.gallery-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.gallery-card img{
+
+height:250px;
+
+}
+
+    }
+    <!-- =========================================
+            SECTION 4E
+     GALLERY JAVASCRIPT & LIGHTBOX
+========================================= -->
+
+<script>
+
+// ===============================
+// Premium Gallery Lightbox
+// ===============================
+
+const galleryImages =
+document.querySelectorAll(".gallery-card img");
+
+const lightbox =
+document.getElementById("lightbox");
+
+const lightboxImage =
+document.getElementById("lightboxImage");
+
+const closeLightbox =
+document.getElementById("closeLightbox");
+
+galleryImages.forEach((img)=>{
+
+img.addEventListener("click",()=>{
+
+lightbox.style.display="flex";
+
+lightboxImage.src=img.src;
+
+});
+
+});
+
+closeLightbox.addEventListener("click",()=>{
+
+lightbox.style.display="none";
+
+});
+
+lightbox.addEventListener("click",(e)=>{
+
+if(e.target===lightbox){
+
+lightbox.style.display="none";
+
+}
+
+});
+
+// ===============================
+// Firebase Gallery Placeholder
+// ===============================
+
+function loadFirebaseGallery(){
+
+const gallery =
+document.getElementById("firebaseGallery");
+
+if(!gallery) return;
+
+gallery.innerHTML = `
+
+<div class="card center">
+
+<h3>
+
+📸 Live Gallery
+
+</h3>
+
+<br>
+
+<p>
+
+Firebase मधून नवीन फोटो
+आल्यावर ते येथे
+आपोआप दिसतील.
+
+</p>
+
+</div>
+
+`;
+
+}
+
+window.addEventListener(
+
+"load",
+
+loadFirebaseGallery
+
+);
+
+// ===============================
+// Load More Button
+// ===============================
+
+const loadMoreBtn =
+document.getElementById("loadMoreBtn");
 
 if(loadMoreBtn){
 
 loadMoreBtn.addEventListener("click",()=>{
 
-alert("लवकरच अधिक फोटो उपलब्ध होतील.");
+alert(
+
+"🚩 नवीन फोटो लवकरच उपलब्ध होतील."
+
+);
 
 });
 
 }
-
-const eventList = document.getElementById("eventList");
-
-const noticeBoard = document.getElementById("noticeBoard");
 
 </script>
 
-<script type="module">
+<!-- =========================================
+            SECTION 4E END
+========================================= -->
+    <!-- =========================================
+            SECTION 5A
+        EVENTS SECTION START
+========================================= -->
 
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+<section id="events">
 
-import {
+<div class="container">
 
-getFirestore,
+<h2>📅 आगामी कार्यक्रम</h2>
 
-collection,
+<p class="center">
 
-getDocs
+नवयुग प्रतिष्ठान सणसर सार्वजनिक गणेशोत्सव मंडळाच्या
+आगामी कार्यक्रमांची माहिती येथे उपलब्ध असेल.
 
-} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+</p>
 
-// Firebase Config येथे पुढील Section मध्ये जोडला जाईल
-    const firebaseConfig = {
+<br><br>
 
-apiKey: "YOUR_API_KEY",
+<div class="event-grid">
 
-authDomain: "YOUR_PROJECT.firebaseapp.com",
+<div class="event-card">
 
-projectId: "YOUR_PROJECT_ID",
+<div class="event-date">
 
-storageBucket: "YOUR_PROJECT.appspot.com",
+14
 
-messagingSenderId: "YOUR_SENDER_ID",
+<span>सप्टेंबर 2026</span>
 
-appId: "YOUR_APP_ID"
+</div>
 
-};
+<div class="event-details">
 
-const app = initializeApp(firebaseConfig);
+<h3>
 
-const db = getFirestore(app);
+🪔 श्री गणेश मूर्ती प्राणप्रतिष्ठा
 
-async function loadNotices(){
+</h3>
 
-const snapshot = await getDocs(collection(db,"notices"));
+<p>
 
-snapshot.forEach((doc)=>{
+श्री गणेश मूर्तीची विधिवत
+प्राणप्रतिष्ठा मोठ्या भक्तिभावाने
+आणि धार्मिक विधीनुसार
+संपन्न होईल.
 
-console.log(doc.data());
+</p>
 
-});
+</div>
+
+</div>
+
+</div>
+
+<br><br>
+
+<div class="card center">
+
+<h3>
+
+📢 सूचना
+
+</h3>
+
+<p>
+
+इतर सर्व कार्यक्रमांचे वेळापत्रक
+लवकरच जाहीर करण्यात येईल.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================================
+            SECTION 5A END
+========================================= -->
+    <!-- =========================================
+            SECTION 5B
+      LIVE EVENTS & TIMELINE
+========================================= -->
+
+<div class="container">
+
+<div class="card">
+
+<h2>
+
+🗓️ कार्यक्रम वेळापत्रक
+
+</h2>
+
+<p class="center">
+
+मंडळाचे सर्व कार्यक्रम येथे
+क्रमवार दर्शविले जातील.
+
+</p>
+
+<br>
+
+<div class="timeline">
+
+<div class="timeline-item active">
+
+<div class="timeline-dot"></div>
+
+<div class="timeline-content">
+
+<h3>
+
+🪔 १४ सप्टेंबर २०२६
+
+</h3>
+
+<h4>
+
+श्री गणेश मूर्ती प्राणप्रतिष्ठा
+
+</h4>
+
+<p>
+
+श्री गणेश मूर्तीची
+विधिवत प्राणप्रतिष्ठा
+सकाळी शुभ मुहूर्तावर
+संपन्न होईल.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="timeline-item">
+
+<div class="timeline-dot"></div>
+
+<div class="timeline-content">
+
+<h3>
+
+📢 पुढील कार्यक्रम
+
+</h3>
+
+<p>
+
+लवकरच जाहीर करण्यात येतील.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="timeline-item">
+
+<div class="timeline-dot"></div>
+
+<div class="timeline-content">
+
+<h3>
+
+🔥 Live Update
+
+</h3>
+
+<p>
+
+Firebase मधून
+नवीन कार्यक्रम
+येथे आपोआप
+दिसतील.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<br>
+
+<div class="card">
+
+<h2>
+
+📡 Live कार्यक्रम
+
+</h2>
+
+<p class="center">
+
+Firebase मधून येणारे
+सर्व नवीन कार्यक्रम
+येथे Live दिसतील.
+
+</p>
+
+<br>
+
+<div id="firebaseEvents">
+
+<div class="event-card">
+
+<h3>
+
+📅 सध्या उपलब्ध कार्यक्रम
+
+</h3>
+
+<p>
+
+१४ सप्टेंबर २०२६
+श्री गणेश मूर्ती प्राणप्रतिष्ठा
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- =========================================
+            SECTION 5B END
+========================================= -->
+    <!-- =========================================
+            SECTION 5C
+    EVENTS CSS + JAVASCRIPT + SECTION END
+========================================= -->
+
+<style>
+
+/* ===== Event Section ===== */
+
+.event-grid{
+
+display:grid;
+grid-template-columns:1fr;
+gap:30px;
 
 }
 
-async function loadEvents(){
+.event-card{
 
-const snapshot = await getDocs(collection(db,"events"));
-
-snapshot.forEach((doc)=>{
-
-console.log(doc.data());
-
-});
-
-}
-
-async function loadGallery(){
-
-const snapshot = await getDocs(collection(db,"gallery"));
-
-snapshot.forEach((doc)=>{
-
-console.log(doc.data());
-
-});
+background:#fff;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.10);
+display:flex;
+gap:25px;
+align-items:center;
+transition:.35s;
 
 }
 
-loadNotices();
+.event-card:hover{
 
-loadEvents();
+transform:translateY(-8px);
 
-loadGallery();
+}
+
+.event-date{
+
+min-width:120px;
+height:120px;
+background:linear-gradient(135deg,#ff9800,#ff6b00);
+color:#fff;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+border-radius:20px;
+font-size:42px;
+font-weight:700;
+
+}
+
+.event-date span{
+
+font-size:15px;
+margin-top:6px;
+
+}
+
+.event-details h3{
+
+color:#ff6b00;
+margin-bottom:12px;
+
+}
+
+.timeline{
+
+position:relative;
+padding-left:35px;
+
+}
+
+.timeline::before{
+
+content:"";
+position:absolute;
+left:10px;
+top:0;
+bottom:0;
+width:4px;
+background:#ff9800;
+
+}
+
+.timeline-item{
+
+position:relative;
+margin-bottom:35px;
+
+}
+
+.timeline-dot{
+
+position:absolute;
+left:-33px;
+top:6px;
+width:18px;
+height:18px;
+background:#ff6b00;
+border-radius:50%;
+border:4px solid #fff;
+box-shadow:0 0 0 3px #ff9800;
+
+}
+
+.timeline-content{
+
+background:#fff;
+padding:22px;
+border-radius:15px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.timeline-item.active .timeline-content{
+
+border-left:6px solid #ff6b00;
+
+}
+
+@media(max-width:768px){
+
+.event-card{
+
+flex-direction:column;
+text-align:center;
+
+}
+
+.event-date{
+
+width:100px;
+height:100px;
+font-size:34px;
+
+}
+
+}
+
+</style>
+
+<script>
+
+function loadFirebaseEvents(){
+
+const events=document.getElementById("firebaseEvents");
+
+if(!events) return;
+
+console.log("Firebase Events Ready");
+
+}
+
+window.addEventListener("load",loadFirebaseEvents);
 
 </script>
 
-</body>
+</section>
 
-</html>
+<!-- =========================================
+        SECTION 5 COMPLETE
+========================================= -->
+    <!-- =========================================
+            SECTION 6A
+      DONATION SECTION START
+========================================= -->
+
+<section id="donation">
+
+<div class="container">
+
+<h2>💰 देणगीदार</h2>
+
+<p class="center">
+
+नवयुग प्रतिष्ठान सणसर सार्वजनिक गणेशोत्सव मंडळासाठी
+मिळालेल्या देणगीची माहिती.
+
+</p>
+
+<br><br>
+
+<div class="donation-summary">
+
+<div class="card donation-box">
+
+<h3>
+
+💵 एकूण देणगी
+
+</h3>
+
+<h1 id="totalDonation">
+
+₹ 0
+
+</h1>
+
+</div>
+
+<div class="card donation-box">
+
+<h3>
+
+👥 एकूण देणगीदार
+
+</h3>
+
+<h1 id="totalDonors">
+
+0
+
+</h1>
+
+</div>
+
+</div>
+
+<br><br>
+
+<div class="card">
+
+<h2>
+
+🙏 देणगीदारांची यादी
+
+</h2>
+
+<div class="donation-table">
+
+<table width="100%">
+
+<thead>
+
+<tr>
+
+<th>क्र.</th>
+
+<th>देणगीदार</th>
+
+<th>रक्कम</th>
+
+</tr>
+
+</thead>
+
+<tbody id="donorTable">
+
+<tr>
+
+<td colspan="3" style="text-align:center;">
+
+सध्या कोणतीही देणगी नोंदलेली नाही.
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================================
+            SECTION 6A END
+========================================= -->
+    <!-- =========================================
+            SECTION 6B
+     DONATION ANALYTICS & FIREBASE
+========================================= -->
+
+<div class="container">
+
+<div class="donation-grid">
+
+<!-- Top Donor -->
+
+<div class="card">
+
+<h2>
+
+🏆 प्रमुख देणगीदार
+
+</h2>
+
+<div id="topDonor">
+
+<div class="donor-card">
+
+<img src="images/logo.png"
+alt="Ganpati Logo">
+
+<h3>
+
+अद्याप उपलब्ध नाही
+
+</h3>
+
+<p>
+
+Firebase मधून
+माहिती येथे
+आपोआप दिसेल.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Live Donation -->
+
+<div class="card">
+
+<h2>
+
+📡 Live देणगी
+
+</h2>
+
+<div id="liveDonation">
+
+<p class="center">
+
+सध्या कोणतीही
+Live देणगी उपलब्ध नाही.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<br>
+
+<div class="card">
+
+<h2>
+
+📊 देणगीचा आढावा
+
+</h2>
+
+<div class="donation-summary">
+
+<div class="donation-box">
+
+<h3>
+
+💰 एकूण देणगी
+
+</h3>
+
+<h1 id="grandTotal">
+
+₹ 0
+
+</h1>
+
+</div>
+
+<div class="donation-box">
+
+<h3>
+
+👥 एकूण देणगीदार
+
+</h3>
+
+<h1 id="grandDonors">
+
+0
+
+</h1>
+
+</div>
+
+<div class="donation-box">
+
+<h3>
+
+🏆 सर्वात मोठी देणगी
+
+</h3>
+
+<h1 id="highestDonation">
+
+₹ 0
+
+</h1>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+/* ===== Donation Summary ===== */
+
+function updateDonationSummary(){
+
+const total=document.getElementById("grandTotal");
+const donors=document.getElementById("grandDonors");
+const highest=document.getElementById("highestDonation");
+
+if(total) total.innerHTML="₹ 0";
+if(donors) donors.innerHTML="0";
+if(highest) highest.innerHTML="₹ 0";
+
+}
+
+window.addEventListener(
+
+"load",
+
+updateDonationSummary
+
+);
+
+</script>
+
+<!-- =========================================
+            SECTION 6B END
+========================================= -->
+    <!-- =========================================
+            SECTION 6C
+   DONATION SEARCH + FIREBASE TABLE
+========================================= -->
+
+<div class="container">
+
+<div class="card">
+
+<h2>
+
+🔎 देणगीदार शोधा
+
+</h2>
+
+<p class="center">
+
+देणगीदाराचे नाव टाकून शोधा.
+
+</p>
+
+<br>
+
+<input
+type="text"
+id="donorSearch"
+placeholder="देणगीदाराचे नाव लिहा..."
+style="
+width:100%;
+padding:16px;
+font-size:16px;
+border:2px solid #ff9800;
+border-radius:12px;
+outline:none;
+">
+
+<br><br>
+
+<div style="overflow-x:auto;">
+
+<table class="donation-table" width="100%">
+
+<thead>
+
+<tr>
+
+<th>क्र.</th>
+
+<th>देणगीदार</th>
+
+<th>रक्कम</th>
+
+<th>तारीख</th>
+
+</tr>
+
+</thead>
+
+<tbody id="firebaseDonorTable">
+
+<tr>
+
+<td colspan="4" style="text-align:center;">
+
+सध्या कोणतीही माहिती उपलब्ध नाही.
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>
+
+📡 Firebase Live Donation
+
+</h2>
+
+<p class="center">
+
+Firebase मधून नवीन देणगी
+येथे आपोआप दिसेल.
+
+</p>
+
+<div id="firebaseDonationList">
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+/* ===== Search Donor ===== */
+
+const donorSearch=document.getElementById("donorSearch");
+
+if(donorSearch){
+
+donorSearch.addEventListener("keyup",function(){
+
+const value=this.value.toLowerCase();
+
+const rows=document.querySelectorAll("#firebaseDonorTable tr");
+
+rows.forEach((row)=>{
+
+if(row.innerText.toLowerCase().includes(value)){
+
+row.style.display="";
+
+}else{
+
+row.style.display="none";
+
+}
+
+});
+
+});
+
+}
+
+/* Firebase Donation Placeholder */
+
+function loadFirebaseDonation(){
+
+console.log("Firebase Donation Ready");
+
+}
+
+window.addEventListener(
+
+"load",
+
+loadFirebaseDonation
+
+);
+
+</script>
+
+<!-- =========================================
+            SECTION 6C END
+========================================= -->
+    <!-- =========================================
+            SECTION 7A
+        आर्थिक अहवाल START
+========================================= -->
+
+<section id="accounts">
+
+<div class="container">
+
+<h2>📒 आर्थिक अहवाल</h2>
+
+<p class="center">
+
+नवयुग प्रतिष्ठान सणसर सार्वजनिक गणेशोत्सव मंडळाचा
+आर्थिक अहवाल येथे पारदर्शकपणे उपलब्ध असेल.
+
+</p>
+
+<br><br>
+
+<div class="donation-summary">
+
+<div class="card donation-box">
+
+<h3>💰 एकूण जमा</h3>
+
+<h1 id="totalIncome">
+
+₹ 0
+
+</h1>
+
+</div>
+
+<div class="card donation-box">
+
+<h3>💸 एकूण खर्च</h3>
+
+<h1 id="totalExpense">
+
+₹ 0
+
+</h1>
+
+</div>
+
+<div class="card donation-box">
+
+<h3>🏦 शिल्लक</h3>
+
+<h1 id="balanceAmount">
+
+₹ 0
+
+</h1>
+
+</div>
+
+</div>
+
+<br><br>
+
+<div class="card">
+
+<h2>📊 आर्थिक सारांश</h2>
+
+<div style="overflow-x:auto;">
+
+<table width="100%" class="donation-table">
+
+<thead>
+
+<tr>
+
+<th>प्रकार</th>
+
+<th>रक्कम</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>एकूण जमा</td>
+
+<td id="summaryIncome">₹ 0</td>
+
+</tr>
+
+<tr>
+
+<td>एकूण खर्च</td>
+
+<td id="summaryExpense">₹ 0</td>
+
+</tr>
+
+<tr>
+
+<td><strong>शिल्लक</strong></td>
+
+<td id="summaryBalance"><strong>₹ 0</strong></td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================================
+            SECTION 7A END
+========================================= -->
+    <!-- =========================================
+            SECTION 7B
+        आवक - जावक तपशील
+========================================= -->
+
+<section id="incomeExpense">
+
+<div class="container">
+
+<div class="card">
+
+<h2>📥 आवक (Income)</h2>
+
+<p class="center">
+
+मंडळाला प्राप्त झालेल्या सर्व रकमेची माहिती.
+
+</p>
+
+<br>
+
+<div style="overflow-x:auto;">
+
+<table class="donation-table" width="100%">
+
+<thead>
+
+<tr>
+
+<th>क्र.</th>
+
+<th>तारीख</th>
+
+<th>तपशील</th>
+
+<th>रक्कम</th>
+
+</tr>
+
+</thead>
+
+<tbody id="incomeTable">
+
+<tr>
+
+<td colspan="4" style="text-align:center;">
+
+सध्या कोणतीही आवक नोंदलेली नाही.
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+<br>
+
+<div class="card">
+
+<h2>📤 जावक (Expense)</h2>
+
+<p class="center">
+
+मंडळाच्या खर्चाची संपूर्ण माहिती.
+
+</p>
+
+<br>
+
+<div style="overflow-x:auto;">
+
+<table class="donation-table" width="100%">
+
+<thead>
+
+<tr>
+
+<th>क्र.</th>
+
+<th>तारीख</th>
+
+<th>खर्चाचा तपशील</th>
+
+<th>रक्कम</th>
+
+</tr>
+
+</thead>
+
+<tbody id="expenseTable">
+
+<tr>
+
+<td colspan="4" style="text-align:center;">
+
+सध्या कोणताही खर्च नोंदलेला नाही.
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+<br>
+
+<div class="card">
+
+<h2>📡 Firebase Live Report</h2>
+
+<p class="center">
+
+आवक, जावक आणि आर्थिक अहवाल Firebase मधून
+आपोआप येथे अपडेट होईल.
+
+</p>
+
+<div id="firebaseAccounts">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<script>
+
+/* ===== Firebase Accounts Placeholder ===== */
+
+function loadAccounts(){
+
+console.log("Income & Expense Ready");
+
+}
+
+window.addEventListener(
+
+"load",
+
+loadAccounts
+
+);
+
+</script>
+
+<!-- =========================================
+            SECTION 7B END
+========================================= -->
+    <!-- =========================================
+            SECTION 7C
+      FINANCIAL REPORT & CHARTS
+========================================= -->
+
+<section id="financial-report">
+
+<div class="container">
+
+<div class="card">
+
+<h2>📊 आर्थिक अहवाल</h2>
+
+<p class="center">
+
+नवयुग प्रतिष्ठान सणसर सार्वजनिक गणेशोत्सव मंडळाचा
+वार्षिक आर्थिक आढावा.
+
+</p>
+
+<br>
+
+<div class="report-grid">
+
+<div class="report-card">
+
+<h3>💰 एकूण जमा</h3>
+
+<h1 id="reportIncome">
+
+₹ 0
+
+</h1>
+
+</div>
+
+<div class="report-card">
+
+<h3>💸 एकूण खर्च</h3>
+
+<h1 id="reportExpense">
+
+₹ 0
+
+</h1>
+
+</div>
+
+<div class="report-card">
+
+<h3>🏦 शिल्लक</h3>
+
+<h1 id="reportBalance">
+
+₹ 0
+
+</h1>
+
+</div>
+
+</div>
+
+<br>
+
+<h3 style="text-align:center;">
+
+📈 आर्थिक चार्ट
+
+</h3>
+
+<br>
+
+<canvas id="financeChart"
+height="120">
+
+</canvas>
+
+</div>
+
+<br>
+
+<div class="card">
+
+<h2>
+
+📄 वार्षिक अहवाल
+
+</h2>
+
+<p class="center">
+
+२०२५ पासूनचे सर्व आर्थिक अहवाल
+येथे उपलब्ध होतील.
+
+</p>
+
+<br>
+
+<div class="report-buttons">
+
+<button class="btn">
+
+📥 PDF डाउनलोड
+
+</button>
+
+<button class="btn">
+
+🖨️ प्रिंट
+
+</button>
+
+<button class="btn">
+
+📊 Excel
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<script>
+
+function updateFinancialReport(){
+
+document.getElementById("reportIncome").innerHTML="₹ 0";
+
+document.getElementById("reportExpense").innerHTML="₹ 0";
+
+document.getElementById("reportBalance").innerHTML="₹ 0";
+
+}
+
+window.addEventListener(
+
+"load",
+
+updateFinancialReport
+
+);
+
+// Firebase Financial Report Placeholder
+
+function loadFinancialReport(){
+
+console.log("Financial Report Ready");
+
+}
+
+window.addEventListener(
+
+"load",
+
+loadFinancialReport
+
+);
+
+</script>
+
+<!-- =========================================
+            SECTION 7C END
+========================================= -->
+    <!-- =========================================
+            SECTION 8A
+       CONTACT & LOCATION START
+========================================= -->
+
+<section id="contact">
+
+<div class="container">
+
+<h2>📍 संपर्क व स्थान</h2>
+
+<p class="center">
+
+नवयुग प्रतिष्ठान सणसर
+सार्वजनिक गणेशोत्सव मंडळ
+
+</p>
+
+<br><br>
+
+<div class="contact-grid">
+
+<!-- Contact Card -->
+
+<div class="card">
+
+<h2>📞 संपर्क</h2>
+
+<p>
+
+🏵️ <strong>नवयुग प्रतिष्ठान सणसर</strong>
+
+</p>
+
+<br>
+
+<p>
+
+📍 सणसर, ता. इंदापूर,
+जि. पुणे - महाराष्ट्र
+
+</p>
+
+<br>
+
+<p>
+
+📮 PIN : 413104
+
+</p>
+
+<br>
+
+<p>
+
+🙏 गणपती बाप्पा मोरया
+
+</p>
+
+</div>
+
+<!-- Location Card -->
+
+<div class="card">
+
+<h2>🗺️ आमचे स्थान</h2>
+
+<iframe
+
+src="https://www.google.com/maps?q=4P62+QJW+Sansar,+Maharashtra&output=embed"
+
+loading="lazy"
+
+allowfullscreen
+
+style="
+width:100%;
+height:350px;
+border:none;
+border-radius:15px;
+">
+
+</iframe>
+
+<br><br>
+
+<div style="text-align:center;">
+
+<a
+
+href="https://maps.app.goo.gl/Qf4wEH1uvhRJwDRN8"
+
+target="_blank"
+
+class="btn"
+
+>
+
+📍 Google Maps मध्ये उघडा
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================================
+            SECTION 8A END
+========================================= -->
+    <!-- =========================================
+            SECTION 8B
+       FOOTER & FEEDBACK
+========================================= -->
+
+<footer id="footer">
+
+<div class="container">
+
+<h2>
+
+🏵️ नवयुग प्रतिष्ठान सणसर
+
+</h2>
+
+<h3 style="color:#ff9800;">
+
+✨ ही शान कोणाची...
+नवयुगच्या राज्याची! ✨
+
+</h3>
+
+<br>
+
+<p>
+
+सार्वजनिक गणेशोत्सव मंडळ
+
+</p>
+
+<p>
+
+सेवा • संस्कार • समाज
+
+</p>
+
+<br>
+
+<hr>
+
+<br>
+
+<h3>
+
+📩 अभिप्राय
+
+</h3>
+
+<p>
+
+आपला अभिप्राय आम्हाला नक्की कळवा.
+
+</p>
+
+<br>
+
+<form id="feedbackForm">
+
+<input
+type="text"
+placeholder="आपले नाव"
+required
+style="
+width:100%;
+padding:15px;
+margin-bottom:15px;
+border-radius:10px;
+border:1px solid #ccc;
+">
+
+<textarea
+placeholder="आपला अभिप्राय..."
+rows="5"
+required
+style="
+width:100%;
+padding:15px;
+border-radius:10px;
+border:1px solid #ccc;
+resize:none;
+">
+
+</textarea>
+
+<br><br>
+
+<button
+type="submit"
+class="btn">
+
+📨 अभिप्राय पाठवा
+
+</button>
+
+</form>
+
+<br><br>
+
+<h3>
+
+🌐 Follow Us
+
+</h3>
+
+<p>
+
+Facebook • Instagram • YouTube
+
+</p>
+
+<br>
+
+<hr>
+
+<br>
+
+<p>
+
+© 2026
+
+<strong>
+
+नवयुग प्रतिष्ठान सणसर
+
+</strong>
+
+<br>
+
+All Rights Reserved.
+
+</p>
+
+<br>
+
+<p style="font-size:14px;opacity:.8;">
+
+Developed with ❤️
+for
+Navyug Pratishthan Sansar
+
+</p>
+
+</div>
+
+</footer>
+
+<script>
+
+document
+.getElementById("feedbackForm")
+.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+alert("🙏 आपल्या अभिप्रायाबद्दल धन्यवाद!");
+
+this.reset();
+
+});
+
+</script>
+
+<!-- =========================================
+          WEBSITE COMPLETE
+========================================= -->
+    
+    
+    
+    
+    
     
     
